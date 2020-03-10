@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="TestMethods">
+    <classes>
+      <class name="com.javainterviewqn.org.testngmoduletests.Module3Tests"/>
+      <class name="com.javainterviewqn.org.testng.Module1Tests"/>
+      <class name="com.javainterviewqn.org.testng.Module2Tests"/>
+      <class name="com.javainterviewqn.org.testng.Main"/>
+    </classes>
+  </test> <!-- TestMethods -->
+</suite> <!-- Suite -->
