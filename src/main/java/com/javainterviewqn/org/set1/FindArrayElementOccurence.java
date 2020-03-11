@@ -9,8 +9,9 @@ public class FindArrayElementOccurence {
 	
 	public void usingMultipleForLoop(String arr[]) {
 		
-		Map<String, Integer> elementCount = new LinkedHashMap<String, Integer>();
-		List<String> occurence = new LinkedList<String>();
+		System.out.println("Execution using multiple FOR loop");
+		
+		String checkedCharacters = "";
 		
 		for (int i = 0; i < arr.length; i++) {
 			
@@ -22,22 +23,16 @@ public class FindArrayElementOccurence {
 					count++;
 				}
 				
-			}
+			}		
 			
-			if(!occurence.contains(arr[i])) {
-				
-				occurence.add(arr[i]);
-				elementCount.put(arr[i], count);
-				
-			}
+			if (!checkedCharacters.contains(arr[i])) {
+
+				System.out.println(arr[i]+" :: "+count);
+				checkedCharacters = checkedCharacters + arr[i];
+
+			} 
 			
-		}
-		
-		System.out.println("Execution using multiple FOR loop");
-		for (Map.Entry<String, Integer> occurenceDetails : elementCount.entrySet()) {
-			
-			System.out.println(occurenceDetails.getKey()+" :: "+occurenceDetails.getValue());
-		}
+		}		
 		
 	}
 	
@@ -70,7 +65,7 @@ public class FindArrayElementOccurence {
 
 	public static void main(String[] args) {
 
-		String arr[] = {"Fire","Water","Wind","Cold","Ice","Air","Fire","Air","Fire","Water"};
+		String arr[] = {"Fire","Water","Wind","Cold","Ice","Air","Fire","Air","Fire","Water","Hot","Ice","Air","Hot"};
 		
 		FindArrayElementOccurence findArrayElementOccurance = new FindArrayElementOccurence();
 		findArrayElementOccurance.usingMultipleForLoop(arr);
