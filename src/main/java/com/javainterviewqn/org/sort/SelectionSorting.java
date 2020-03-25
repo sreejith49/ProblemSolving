@@ -51,7 +51,8 @@ public class SelectionSorting {
 	
 	public static void main(String[] args) {
 
-		int arr[] = {11,6,22,5,1};
+		int arr[] = {5,2,8,1,4,3,7,6,0};
+		
 		SelectionSorting sorting = new SelectionSorting();
 		sorting.readArray(sorting.sort(arr));
 	}
