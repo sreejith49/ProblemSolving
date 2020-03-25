@@ -45,13 +45,14 @@ public class SelectionSorting {
 
 		for (int i = 0; i <= arr.length - 1; i++) {
 
-			System.out.print(arr[i]);
+			System.out.print(arr[i]+" ");
 		}
 	}
 	
 	public static void main(String[] args) {
 
 		int arr[] = {5,2,8,1,4,3,7,6,0};
+		
 		SelectionSorting sorting = new SelectionSorting();
 		sorting.readArray(sorting.sort(arr));
 	}
