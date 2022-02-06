@@ -10,7 +10,6 @@ public class ReverseAnArrayBySubset {
 		int count = 1;
 		
 		int[] tempNum = new int[subSetSetter]; 
-		System.out.println(num);
 		
 		for (int numIndex=0;numIndex<num.length;numIndex++) {
 			
@@ -28,9 +27,6 @@ public class ReverseAnArrayBySubset {
 			count++;
 			
 		}
-		
-		System.out.println(num);
-
 		
 	}
 
