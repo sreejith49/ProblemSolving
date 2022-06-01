@@ -45,5 +45,6 @@ public class MergeSortedArraysInAscOrder {
 
         System.out.println(mergedArr.toString());
 
+
     }
 }

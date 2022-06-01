@@ -31,6 +31,7 @@ public class Sum {
 		 public static void main (String[] args){
 			
 			int[] arr = {-1,3,5,7,8};
+			int[] arr3 = {-1,3,5,7,8,9,11};
 			Sum sum = new Sum();
 			int[] result = sum.findSumElements(arr, 5);
 		 	System.out.println(result[0]+":"+result[1]);
